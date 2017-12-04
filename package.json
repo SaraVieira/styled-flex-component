@@ -1,20 +1,25 @@
 {
-  "name": "flex-element",
-  "description": "Flex Element for not writing any more custom flex styles because fuck that",
-  "version": "0.0.61",
-  "dependencies": {
-    "styled-is": "1.1.0",
-    "styled-components": "2.2.4",
-    "react-dom": "16.0.0",
-    "react": "16.0.0"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "flex-element",
+	"description":
+		"Flex Element for not writing any more custom flex styles because fuck that",
+	"version": "0.0.61",
+	"dependencies": {
+		"styled-is": "1.1.0",
+		"styled-components": "2.2.4"
+	},
+	"devDependencies": {
+		"eslint": "^4.10.0",
+		"prettier": "^1.7.4"
+	},
+	"scripts": {
+		"lint": "eslint . --cache --fix",
+		"pretest": "npm run lint",
+		"format": "prettier --write '**/*.{js,md}'",
+		"posttest": "npm run format",
+		"precommit": "lint-staged"
+	},
+	"license": "MIT",
+	"lint-staged": {
+		"**.{js,md}": ["eslint --fix", "git add"]
+	}
 }
