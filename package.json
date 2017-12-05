@@ -1,7 +1,7 @@
 {
 	"name": "styled-flex-component",
 	"description": "Flex Element for not writing any more custom flex styles because fuck that",
-	"version": "0.0.61",
+	"version": "1.0.0",
 	"dependencies": {
 		"styled-components": "2.2.4",
 		"styled-is": "1.1.0"
