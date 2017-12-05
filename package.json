@@ -1,7 +1,7 @@
 {
 	"name": "styled-flex-component",
 	"description": "Flex Element for not writing any more custom flex styles because fuck that",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"dependencies": {
 		"styled-components": "2.2.4",
 		"styled-is": "1.1.0"
@@ -35,6 +35,9 @@
 	},
 	"license": "MIT",
 	"lint-staged": {
-		"**.{js,md}": ["eslint --fix", "git add"]
+		"**.{js,md}": [
+			"eslint --fix",
+			"git add"
+		]
 	}
 }
