@@ -1,5 +1,5 @@
 {
-	"name": "flex-element",
+	"name": "styled-flex",
 	"description": "Flex Element for not writing any more custom flex styles because fuck that",
 	"version": "0.0.61",
 	"dependencies": {
