@@ -1,7 +1,7 @@
 # Styled-Flex
 
-[![Codecov](https://codecov.io/gh/SaraVieira/flex-element/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/flex-element)
-[![Build Status](https://travis-ci.org/SaraVieira/flex-element.svg)](https://travis-ci.org/SaraVieira/flex-element)
+[![Codecov](https://codecov.io/gh/SaraVieira/styled-flex-component/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/styled-flex-component)
+[![Build Status](https://travis-ci.org/SaraVieira/styled-flex-component.svg)](https://travis-ci.org/SaraVieira/styled-flex-component)
 
 Flex Element for not writing any more custom flex styles because fuck that
 
