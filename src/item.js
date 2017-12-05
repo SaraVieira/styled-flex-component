@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import is from 'styled-is'
+import styled from 'styled-components';
+import is from 'styled-is';
 
 const FlexItem = styled.div`
   ${is('order')`
@@ -15,12 +15,12 @@ const FlexItem = styled.div`
   `};
 
   ${is('shrink')`
-    flex-grow: 1;
+    flex-shrink: 1;
   `};
 
   ${is('noShrink')`
-    flex-grow: 0;
+    flex-shrink: 0;
   `};
-`
+`;
 
-export default FlexItem
+export default FlexItem;

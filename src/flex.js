@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import is from 'styled-is'
+import styled from 'styled-components';
+import is from 'styled-is';
 
 const Flex = styled.div`
   display: flex;
@@ -67,32 +67,28 @@ const Flex = styled.div`
     align-content: around;
   `};
 
-  ${is('contentStretch')`
-    align-content: stretch;
-  `};
-
   ${is('justifyCenter')`
-    justify-items: center;
+    justify-content: center;
   `};
 
   ${is('justifyStart')`
-    justify-items: flex-start;
+    justify-content: flex-start;
   `};
 
   ${is('justifyEnd')`
-    justify-items: flex-end;
+    justify-content: flex-end;
   `};
 
   ${is('justifyBetween')`
-    justify-items: space-between;
+    justify-content: space-between;
   `};
 
   ${is('justifyAround')`
-    justify-items: space-around;
+    justify-content: space-around;
   `};
 
   ${is('justifyEvenly')`
-    justify-items: space-evenly;
+    justify-content: space-evenly;
   `};
 
   ${is('rowReverse')`
@@ -100,7 +96,7 @@ const Flex = styled.div`
   `};
 
   ${is('column')`
-    flex-direction: column-reverse;
+    flex-direction: column;
   `};
 
   ${is('columnReverse')`
@@ -114,6 +110,6 @@ const Flex = styled.div`
   ${is('wrapReverse')`
     flex-wrap: wrap-reverse;
   `};
-`
+`;
 
-export default Flex
+export default Flex;

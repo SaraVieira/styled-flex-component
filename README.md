@@ -1,5 +1,6 @@
 # Styled-Flex
 
+[![Codecov](https://codecov.io/gh/SaraVieira/flex-element/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/flex-element)
 [![Build Status](https://travis-ci.org/SaraVieira/flex-element.svg)](https://travis-ci.org/SaraVieira/flex-element)
 
 Flex Element for not writing any more custom flex styles because fuck that

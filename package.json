@@ -1,25 +1,43 @@
 {
 	"name": "flex-element",
-	"description":
-		"Flex Element for not writing any more custom flex styles because fuck that",
+	"description": "Flex Element for not writing any more custom flex styles because fuck that",
 	"version": "0.0.61",
 	"dependencies": {
-		"styled-is": "1.1.0",
-		"styled-components": "2.2.4"
+		"styled-components": "2.2.4",
+		"styled-is": "1.1.0"
 	},
 	"devDependencies": {
-		"eslint": "^4.10.0",
-		"prettier": "^1.7.4"
+		"babel-eslint": "^8.0.3",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"eslint": "^4.12.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-jest": "^21.4.1",
+		"eslint-plugin-jsx-a11y": "^6.0.2",
+		"eslint-plugin-react": "^7.5.1",
+		"jest": "^21.2.1",
+		"jest-styled-components": "^4.9.0",
+		"prettier": "^1.7.4",
+		"react": "^16.2.0",
+		"react-test-renderer": "^16.2.0"
 	},
 	"scripts": {
 		"lint": "eslint . --cache --fix",
 		"pretest": "npm run lint",
 		"format": "prettier --write '**/*.{js,md}'",
 		"posttest": "npm run format",
-		"precommit": "lint-staged"
+		"precommit": "lint-staged",
+		"test:jest": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage",
+		"test": "npm run test:jest && npm run lint"
 	},
 	"license": "MIT",
 	"lint-staged": {
-		"**.{js,md}": ["eslint --fix", "git add"]
+		"**.{js,md}": [
+			"eslint --fix",
+			"git add"
+		]
 	}
 }

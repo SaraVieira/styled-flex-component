@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works basis 1`] = `
+.c0 {
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works grow 1`] = `
+.c0 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works noShrink 1`] = `
+.c0 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works order - 2 1`] = `
+.c0 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+<div
+  className="c0"
+  order="2"
+/>
+`;
+
+exports[`it works order - 3 1`] = `
+.c0 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+<div
+  className="c0"
+  order="3"
+/>
+`;
+
+exports[`it works shrink 1`] = `
+.c0 {
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+<div
+  className="c0"
+/>
+`;
