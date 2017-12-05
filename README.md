@@ -1,4 +1,4 @@
-# Styled-Flex
+# Styled Flex Component
 
 [![Codecov](https://codecov.io/gh/SaraVieira/styled-flex-component/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/styled-flex-component)
 [![Build Status](https://travis-ci.org/SaraVieira/styled-flex-component.svg)](https://travis-ci.org/SaraVieira/styled-flex-component)
@@ -8,16 +8,16 @@ Flex Element for not writing any more custom flex styles because fuck that
 ## Install 
 
 ```
-yarn add styled-flex
+yarn add styled-flex-component
 or
-npm i styled-flex
+npm i styled-flex-component
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-import Flex, { FlexItem } from 'styled-flex';
+import Flex, { FlexItem } from 'styled-flex-component';
 
 
 export default () => (
