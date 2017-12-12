@@ -1,43 +1,60 @@
 {
-	"name": "styled-flex-component",
-	"description": "Flex Element for not writing any more custom flex styles because fuck that",
-	"version": "1.1.0",
-	"dependencies": {
-		"styled-components": "2.2.4",
-		"styled-is": "1.1.0"
-	},
-	"devDependencies": {
-		"babel-eslint": "^8.0.3",
-		"babel-preset-env": "^1.6.1",
-		"babel-preset-react": "^6.24.1",
-		"eslint": "^4.12.1",
-		"eslint-config-airbnb": "^16.1.0",
-		"eslint-plugin-import": "^2.8.0",
-		"eslint-plugin-jest": "^21.4.1",
-		"eslint-plugin-jsx-a11y": "^6.0.2",
-		"eslint-plugin-react": "^7.5.1",
-		"jest": "^21.2.1",
-		"jest-styled-components": "^4.9.0",
-		"prettier": "^1.7.4",
-		"react": "^16.2.0",
-		"react-test-renderer": "^16.2.0"
-	},
-	"scripts": {
-		"lint": "eslint . --cache --fix",
-		"pretest": "npm run lint",
-		"format": "prettier --write '**/*.{js,md}'",
-		"posttest": "npm run format",
-		"precommit": "lint-staged",
-		"test:jest": "jest",
-		"test:watch": "jest --watch",
-		"test:coverage": "jest --coverage",
-		"test": "npm run test:jest && npm run lint"
-	},
-	"license": "MIT",
-	"lint-staged": {
-		"**.{js,md}": [
-			"eslint --fix",
-			"git add"
-		]
-	}
+  "name": "styled-flex-component",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description":
+    "Flex Element for not writing any more custom flex styles because fuck that",
+  "keywords": [
+    "flex",
+    "flexbox",
+    "styled",
+    "react",
+    "css",
+    "css-in-js",
+    "styled-components"
+  ],
+  "repository": "github:SaraVieira/styled-flex-component",
+  "main": "dist/styled-flex-component.umd.js",
+  "jsnext:main": "dist/styled-flex-component.es.js",
+  "module": "dist/styled-flex-component.es.js",
+  "entry": "src/index.js",
+  "directories": {
+    "lib": "dist"
+  },
+  "scripts": {
+    "lint": "eslint . --cache --fix",
+    "pretest": "NODE_ENV=test bup",
+    "format": "prettier --write '**/*.{js,md,json}'",
+    "posttest": "npm run format",
+    "precommit": "lint-staged",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test": "npm run test:jest && npm run lint",
+    "build": "NODE_ENV=development bup",
+    "prepublish": "NODE_ENV=production bup"
+  },
+  "dependencies": {
+    "styled-components": "2.2.4",
+    "styled-is": "1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.3.0",
+    "babel-preset-env": "^1.6.1",
+    "bup": "^3.0.0",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.4.2",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "jest-styled-components": "^4.9.0",
+    "prettier": "^1.9.2",
+    "react": "^16.2.0",
+    "react-test-renderer": "^16.2.0"
+  },
+  "lint-staged": {
+    "**.{js,md}": ["eslint --fix", "git add"]
+  }
 }

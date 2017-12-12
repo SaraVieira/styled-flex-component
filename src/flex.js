@@ -1,94 +1,25 @@
 import styled from 'styled-components';
 import is from 'styled-is';
 
-const Flex = styled.div`
+export default styled.div`
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
 
-  ${is('full')`
-    width: 100%;
-    height: 100%;
-    flex-basis: 100%;
-  `};
+  /********************************* display *********************************/
+  /***************** http://cssreference.io/property/display *****************/
 
   ${is('inline')`
     display: inline-flex;
   `};
 
-  ${is('center')`
-    align-items: center;
-    justify-content: center;
-  `};
+  /******************************** direction ********************************/
+  /************** http://cssreference.io/property/flex-direction **************/
 
-  ${is('alignCenter')`
-    align-items: center;
-  `};
-
-  ${is('alignStart')`
-    align-items: flex-start;
-  `};
-
-  ${is('alignEnd')`
-    align-items: flex-end;
-  `};
-
-  ${is('alignBaseline')`
-    align-items: baseline;
-  `};
-
-  ${is('alignStretch')`
-    align-items: stretch;
-  `};
-
-  ${is('alignCenter')`
-    align-items: center;
-  `};
-
-  ${is('contentCenter')`
-    align-content: center;
-  `};
-
-  ${is('contentStart')`
-    align-content: flex-start;
-  `};
-
-  ${is('contentEnd')`
-    align-content: flex-end;
-  `};
-
-  ${is('contentBaseline')`
-    align-content: baseline;
-  `};
-
-  ${is('contentStretch')`
-    align-content: stretch;
-  `};
-
-  ${is('contentAround')`
-    align-content: around;
-  `};
-
-  ${is('justifyCenter')`
-    justify-content: center;
-  `};
-
-  ${is('justifyStart')`
-    justify-content: flex-start;
-  `};
-
-  ${is('justifyEnd')`
-    justify-content: flex-end;
-  `};
-
-  ${is('justifyBetween')`
-    justify-content: space-between;
-  `};
-
-  ${is('justifyAround')`
-    justify-content: space-around;
-  `};
-
-  ${is('justifyEvenly')`
-    justify-content: space-evenly;
+  ${is('row')`
+    flex-direction: row; /* default */
   `};
 
   ${is('rowReverse')`
@@ -103,6 +34,13 @@ const Flex = styled.div`
     flex-direction: column-reverse;
   `};
 
+  /*********************************** wrap ***********************************/
+  /**************** http://cssreference.io/property/flex-wrap ****************/
+
+  ${is('nowrap')`
+    flex-wrap: nowrap; /* default */
+  `};
+
   ${is('wrap')`
     flex-wrap: wrap;
   `};
@@ -110,6 +48,90 @@ const Flex = styled.div`
   ${is('wrapReverse')`
     flex-wrap: wrap-reverse;
   `};
-`;
 
-export default Flex;
+  /***************************** justify-content *****************************/
+  /************* http://cssreference.io/property/justify-content *************/
+
+  ${is('justifyStart')`
+    justify-content: flex-start; /* default */
+  `};
+
+  ${is('justifyEnd')`
+    justify-content: flex-end;
+  `};
+
+  ${is('justifyCenter')`
+    justify-content: center;
+  `};
+
+  ${is('justifyBetween')`
+    justify-content: space-between;
+  `};
+
+  ${is('justifyAround')`
+    justify-content: space-around;
+  `};
+
+  /****************************** align-content ******************************/
+  /************** http://cssreference.io/property/align-content **************/
+
+  ${is('contentStart')`
+    align-content: flex-start;
+  `};
+
+  ${is('contentEnd')`
+    align-content: flex-end;
+  `};
+
+  ${is('contentCenter')`
+    align-content: center;
+  `};
+
+  ${is('contentSpaceBetween')`
+    align-content: space-between;
+  `};
+
+  ${is('contentSpaceAround')`
+    align-content: space-around;
+  `};
+
+  ${is('contentStretch')`
+    align-content: stretch; /* default */
+  `};
+
+  /******************************* align-items *******************************/
+  /*************** http://cssreference.io/property/align-items ***************/
+
+  ${is('alignStart')`
+    align-items: flex-start;
+  `};
+
+  ${is('alignEnd')`
+    align-items: flex-end;
+  `};
+
+  ${is('alignCenter')`
+    align-items: center;
+  `};
+
+  ${is('alignBaseline')`
+    align-items: baseline;
+  `};
+
+  ${is('alignStretch')`
+    align-items: stretch;
+  `};
+
+  /******************************** utilities ********************************/
+
+  ${is('full')`
+    width: 100%;
+    height: 100%;
+    flex-basis: 100%;
+  `};
+
+  ${is('center')`
+    align-items: center;
+    justify-content: center;
+  `};
+`;
