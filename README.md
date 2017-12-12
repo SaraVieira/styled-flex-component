@@ -1,11 +1,10 @@
 # Styled Flex Component
 
-[![Codecov](https://codecov.io/gh/SaraVieira/styled-flex-component/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/styled-flex-component)
-[![Build Status](https://travis-ci.org/SaraVieira/styled-flex-component.svg)](https://travis-ci.org/SaraVieira/styled-flex-component)
+[![Codecov](https://codecov.io/gh/SaraVieira/styled-flex-component/branch/master/graph/badge.svg)](https://codecov.io/gh/SaraVieira/styled-flex-component) [![Build Status](https://travis-ci.org/SaraVieira/styled-flex-component.svg)](https://travis-ci.org/SaraVieira/styled-flex-component)
 
 Flex Element for not writing any more custom flex styles because fuck that
 
-## Install 
+## Install
 
 ```
 yarn add styled-flex-component
@@ -19,13 +18,12 @@ npm i styled-flex-component
 import React from 'react';
 import Flex, { FlexItem } from 'styled-flex-component';
 
-
 export default () => (
-    <Flex center full>
-        <FlexItem order="2">World</FlexItem>
-        <FlexItem order="1">Hello</FlexItem>
-    </Flex>
-)
+  <Flex center full>
+    <FlexItem order="2">World</FlexItem>
+    <FlexItem order="1">Hello</FlexItem>
+  </Flex>
+);
 ```
 
 ## Props
@@ -50,7 +48,6 @@ All props without description are just true or false values and take no argument
 
 * wrap
 * wrapReverse
-
 
 #### Align Items
 
@@ -88,6 +85,6 @@ All props without description are just true or false values and take no argument
 * shrink
 * noShrink
 
-
 # License
+
 MIT
