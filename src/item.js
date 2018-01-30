@@ -6,19 +6,32 @@ export default styled.div`
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 1;
+  display: block;
+
+  ${is('inlineBlock')`
+    display: inline-block;
+  `};
+
+  ${is('inlineFlex')`
+    display: inline-flex;
+  `};
+
+  ${is('flex')`
+    display: flex;
+  `};
 
   /********************************** order **********************************/
   /****************** http://cssreference.io/property/order ******************/
 
   ${is('order')`
-    order: ${props => props.order}
+    order: ${props => props.order};
   `};
 
   /******************************** flex-basis ********************************/
   /**************** http://cssreference.io/property/flex-basis ****************/
 
   ${is('basis')`
-    flex-basis: ${props => props.basis}
+    flex-basis: ${props => props.basis};
   `};
 
   /******************************** flex-grow ********************************/

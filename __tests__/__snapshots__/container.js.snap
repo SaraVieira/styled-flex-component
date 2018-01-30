@@ -291,7 +291,7 @@ exports[`it works - contentEnd 1`] = `
   -ms-flex-line-pack: stretch;
   align-content: stretch;
   -webkit-align-content: flex-end;
-  -ms-flex-line-pack: flex-end;
+  -ms-flex-line-pack: end;
   align-content: flex-end;
 }
 
@@ -378,7 +378,7 @@ exports[`it works - contentStart 1`] = `
   -ms-flex-line-pack: stretch;
   align-content: stretch;
   -webkit-align-content: flex-start;
-  -ms-flex-line-pack: flex-start;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
 }
 
