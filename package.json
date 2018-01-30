@@ -2,7 +2,8 @@
   "name": "styled-flex-component",
   "version": "2.1.0",
   "license": "MIT",
-  "description": "Flex Element for not writing any more custom flex styles because fuck that",
+  "description":
+    "Flex Element for not writing any more custom flex styles because fuck that",
   "keywords": [
     "flex",
     "flexbox",
@@ -17,9 +18,7 @@
   "jsnext:main": "dist/styled-flex-component.es.js",
   "module": "dist/styled-flex-component.es.js",
   "entry": "src/index.js",
-  "directories": {
-    "lib": "dist"
-  },
+  "files": ["dist"],
   "scripts": {
     "lint": "eslint . --cache --fix",
     "pretest": "NODE_ENV=test bup",
@@ -34,29 +33,26 @@
     "prepublish": "NODE_ENV=production bup"
   },
   "dependencies": {
-    "styled-components": "2.2.4",
-    "styled-is": "1.1.0"
+    "styled-components": "3.1.4",
+    "styled-is": "1.1.2"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.3.0",
+    "babel-plugin-styled-components": "^1.5.0",
     "babel-preset-env": "^1.6.1",
-    "bup": "^3.0.0",
-    "eslint": "^4.13.1",
+    "bup": "^4.1.6",
+    "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^21.4.2",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1",
-    "jest": "^21.2.1",
-    "jest-styled-components": "^4.9.0",
-    "prettier": "^1.9.2",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "jest": "^22.1.4",
+    "jest-styled-components": "^4.11.0-0",
+    "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-test-renderer": "^16.2.0"
   },
   "lint-staged": {
-    "**.{js,md}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "**.{js,md}": ["eslint --fix", "git add"]
   }
 }

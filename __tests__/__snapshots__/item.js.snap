@@ -15,6 +15,7 @@ exports[`it works - basis=-10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-flex-basis: -10;
   -ms-flex-preferred-size: -10;
   flex-basis: -10;
@@ -40,6 +41,7 @@ exports[`it works - basis=10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-flex-basis: 10;
   -ms-flex-preferred-size: 10;
   flex-basis: 10;
@@ -65,6 +67,7 @@ exports[`it works - grow=-10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-box-flex: -10;
   -webkit-flex-grow: -10;
   -ms-flex-positive: -10;
@@ -91,6 +94,7 @@ exports[`it works - grow=10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-box-flex: 10;
   -webkit-flex-grow: 10;
   -ms-flex-positive: 10;
@@ -117,6 +121,7 @@ exports[`it works - noShrink 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -142,6 +147,7 @@ exports[`it works - order=-1 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
@@ -168,6 +174,7 @@ exports[`it works - order=1 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -194,6 +201,7 @@ exports[`it works - shrink=-10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-flex-shrink: -10;
   -ms-flex-negative: -10;
   flex-shrink: -10;
@@ -219,6 +227,7 @@ exports[`it works - shrink=10 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
   -webkit-flex-shrink: 10;
   -ms-flex-negative: 10;
   flex-shrink: 10;
@@ -244,6 +253,7 @@ exports[`it works 1`] = `
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  display: block;
 }
 
 <div
