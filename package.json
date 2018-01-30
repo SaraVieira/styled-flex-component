@@ -1,9 +1,8 @@
 {
   "name": "styled-flex-component",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
-  "description":
-    "Flex Element for not writing any more custom flex styles because fuck that",
+  "description": "Flex Element for not writing any more custom flex styles because fuck that",
   "keywords": [
     "flex",
     "flexbox",
@@ -18,7 +17,9 @@
   "jsnext:main": "dist/styled-flex-component.es.js",
   "module": "dist/styled-flex-component.es.js",
   "entry": "src/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint . --cache --fix",
     "pretest": "NODE_ENV=test bup",
@@ -53,6 +54,9 @@
     "react-test-renderer": "^16.2.0"
   },
   "lint-staged": {
-    "**.{js,md}": ["eslint --fix", "git add"]
+    "**.{js,md}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
