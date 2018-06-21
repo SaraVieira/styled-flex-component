@@ -38,14 +38,14 @@ export default styled.div`
   /**************** http://cssreference.io/property/flex-grow ****************/
 
   ${is('grow')`
-    flex-grow: ${props => props.grow};
+    flex-grow: ${props => props.grow ? 1 : 0};
   `};
 
   /******************************* flex-shrink *******************************/
   /*************** http://cssreference.io/property/flex-shrink ***************/
 
   ${is('shrink')`
-    flex-shrink: ${props => props.shrink};
+    flex-shrink: ${props => props.shrink ? 1 : 0};
   `};
 
   ${is('noShrink')`
