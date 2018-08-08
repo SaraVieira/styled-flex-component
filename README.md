@@ -66,7 +66,6 @@ All props without description are just true or false values and take no argument
 * contentBaseline
 * contentStretch
 * contentAround
-* contentStretch
 
 #### Justify Content
 
