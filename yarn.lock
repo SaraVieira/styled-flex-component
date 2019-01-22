@@ -4333,9 +4333,9 @@ styled-components@3.1.4:
     stylis-rule-sheet "^0.0.7"
     supports-color "^3.2.3"
 
-styled-is@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/styled-is/-/styled-is-1.1.2.tgz#f23a43249ba52ac9136c166aac1da30a5711593e"
+styled-is@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/styled-is/-/styled-is-1.1.5.tgz#acd8ad180217abea036e4f2cc58593899871f02a"
 
 stylis-rule-sheet@^0.0.7:
   version "0.0.7"
