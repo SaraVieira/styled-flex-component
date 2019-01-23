@@ -1,2 +1,2 @@
-export { default } from './flex.js';
-export { default as FlexItem } from './item.js';
+export { default } from './flex';
+export { default as FlexItem } from './item';
