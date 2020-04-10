@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import is from 'styled-is';
+import is from 'styled-components-utils';
 
 export default styled.div`
   order: 0;
