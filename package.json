@@ -13,7 +13,7 @@
     "styled-components"
   ],
   "repository": "github:SaraVieira/styled-flex-component",
-  "main": "dist/styled-flex-component.umd.js",
+  "main": "src/index.js",
   "jsnext:main": "dist/styled-flex-component.es.js",
   "module": "dist/styled-flex-component.es.js",
   "entry": "src/index.js",
