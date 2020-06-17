@@ -1,6 +1,6 @@
 {
   "name": "styled-flex-component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "MIT",
   "description": "Flex Element for not writing any more custom flex styles because fuck that",
   "keywords": [
