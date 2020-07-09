@@ -1,6 +1,6 @@
 {
   "name": "styled-flex-component",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "license": "MIT",
   "description": "Flex Element for not writing any more custom flex styles because fuck that",
   "keywords": [
@@ -36,9 +36,9 @@
     "styled-is": "^1.3.0"
   },
   "peerDependencies": {
-    "styled-components": "^5.1.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
