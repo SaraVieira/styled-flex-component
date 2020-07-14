@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import is from 'styled-is';
 
 export default styled.div.withConfig({
-  shouldForwardProp: (prop) => !['wrap'].includes(prop),
+  shouldForwardProp: (prop) => ['children'].includes(prop),
 })`
   display: flex;
   flex-direction: row;
