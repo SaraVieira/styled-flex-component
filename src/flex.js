@@ -75,6 +75,10 @@ export default styled.div.withConfig({
     justify-content: space-around;
   `};
 
+  ${is('justifyEvenly')`
+    justify-content: space-evenly;
+  `};
+
   /****************************** align-content ******************************/
   /************** http://cssreference.io/property/align-content **************/
 

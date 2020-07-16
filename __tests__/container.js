@@ -117,6 +117,14 @@ test('it works - justifyAround', () => {
   expect(tree).toHaveStyleRule('justify-content', 'space-around');
 });
 
+test('it works - justifyEvenly', () => {
+  const tree = renderer
+    .create(React.createElement(Flex, { justifyEvenly: true }))
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+  expect(tree).toHaveStyleRule('justify-content', 'space-evenly');
+});
+
 test('it works - contentStart', () => {
   const tree = renderer
     .create(React.createElement(Flex, { contentStart: true }))
