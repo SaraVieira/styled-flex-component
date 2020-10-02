@@ -1,7 +1,10 @@
+// eslint-disable-next-line import/no-unresolved
 import styled from 'styled-components';
 import is from 'styled-components-utils';
 
-export default styled.div`
+export default styled.div.withConfig({
+  shouldForwardProp: (prop) => ['children'].includes(prop),
+})`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

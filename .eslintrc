@@ -1,6 +1,9 @@
 {
   "extends": "airbnb",
   "plugins": ["jest"],
+  "rules": {
+    "arrow-parens": 0
+  },
   "env": {
     "jest": true
   }
